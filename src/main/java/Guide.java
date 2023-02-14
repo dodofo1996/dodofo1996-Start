@@ -24,7 +24,11 @@ public class Guide {
      * information stored in binary. Ints are whole numbers. We have named this variable id, since we could use
      * this variable to tell different Guide objects apart.
      */
+
     int id;
+    
+    
+    
 
     /**
      * This is a CONSTRUCTOR. Whenever we instantiate an object, a constructor is called.
@@ -74,4 +78,9 @@ public class Guide {
      *  Your task will be modifying the code in the remainder of the course repo so that their test cases pass rather
      *  than fail.
      */
+     public static void main(String[] args) {
+        Guide myobj = new Guide(27);
+        System.out.println(myobj.guideMethod("this is my life"));
+        
+    }
 }
